@@ -1,0 +1,68 @@
+.filter {
+    margin-left: -15px;
+    margin-bottom: 30px;
+    &-item {
+        border: none;
+        line-height: 1;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 3px;
+        font-size: 16px;
+        margin-left: 15px;
+        text-transform: capitalize;
+        cursor: pointer;
+        &.active, &:hover {
+            background-color: aquamarine;
+        }
+    }
+}
+
+.menus {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    &-item {
+        width: calc(50% - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        overflow: hidden;
+        img {
+            width: 30%;
+            height: auto;
+            object-fit: cover;
+            background-color: gray;
+            
+        }
+        .item-info {
+            width: 70%;
+            padding: 30px;
+            text-align: left;
+            header {
+                display: flex;
+                border-bottom: 1px solid gainsboro;
+                padding-bottom: 15px;
+                margin-bottom: 20px;
+                h4, h5 {
+                    margin: 0;
+                    text-transform: capitalize;
+                }
+                h5 {
+                    color: lightblue;
+                    margin-left: auto;
+                }
+            }
+            .category {
+                background-color: lightblue;
+                padding: 3px 10px;
+                line-height: 1;
+                border-radius: 3px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

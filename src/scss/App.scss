@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: tan;
+}
+.App {
+  text-align: center;
+  background-color: tan;
+  padding: 50px;
+  min-height: 100vh;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.title {
+  margin-bottom: 70px;
+  h1 {
+    position: relative;
+    &::after {
+      content: '';
+      width: 100px;
+      height: 3px;
+      background-color: white;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -20px;
+    }
+  }
+}
